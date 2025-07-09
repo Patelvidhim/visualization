@@ -13,7 +13,7 @@
       Your answer...
 Good Data Visualization
 Title: U.S. Parents’ COVID‑19 Vaccine Attitudes (SurveyMonkey + Tableau)
-
+Link: https://www.tableau.com/blog/surveymonkey-and-tableau-track-public-opinion-data-covid-19-vaccines
 Why it is good:
 
 Effective visual encoding
@@ -30,7 +30,7 @@ The data source is shown clearly (SurveyMonkey and Boston Children’s Hospital)
 
 Bad Data Visualization
 Title: Honeycomb Pie Chart of Sugar and Water in Fruit
-
+Title & Link: Example “Crappy/misleading pie chart” highlighted in Reddit (r/dataisugly)
 Why it is bad:
 
 Misleading area representation
