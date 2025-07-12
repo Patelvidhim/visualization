@@ -7,23 +7,58 @@
 - Choose a dataset of interest from the [City of Toronto’s Open Data Portal](https://www.toronto.ca/city-government/data-research-maps/open-data/) or [Ontario’s Open Data Catalogue](https://data.ontario.ca/). 
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 - For each visualization, describe and justify: 
+
     > What software did you use to create your data visualization?
+    I used Python, specifically the Pandas library for data processing and Seaborn/ Matplotlib for creating the bar chart visualization.
 
     > Who is your intended audience? 
+    The intended audience includes city planners, local community organizations, and residents of Toronto interested in understanding where new park projects are concentrated. It can also be useful for journalists or policymakers tracking urban development and green space investment.
     
     > What information or message are you trying to convey with your visualization? 
-    
+    The visualization conveys which areas in Toronto have the highest number of new park development projects. It highlights geographic trends and helps identify neighborhoods with growing recreational infrastructure investment.
     > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
-    
+    Simplicity: The bar chart was chosen for easy interpretation of comparative counts.
+    Color choice: I used a green palette (palette='summer') to symbolically associate the color with parks and nature.
+    Orientation: A horizontal bar chart improves readability of area names on the y-axis.
+    Title and labels: Clear, descriptive titles and axis labels guide the viewer to understand what the chart represents without additional explanation.
+     Top 10 filter: To avoid clutter, only the top 10 areas are shown, focusing attention on the most significant locations.
+
+
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
+     The entire process is scripted in Python, which means the visualization can be recreated exactly by running the same code with the dataset. Using open-source libraries like Pandas and Seaborn ensures anyone with access to the code and data can reproduce the analysis.
+     The reproducibility would be impacted if the dataset changes or if the script depends on external files that are not shared. To mitigate this, I documented the dataset source and saved the cleaned data version.
     
     > How did you ensure that your data visualization is accessible?  
+
+    Used clear, high-contrast colors to support viewers with color vision deficiencies.
+    The font sizes for axis labels and titles were large enough for easy reading.
+    The horizontal bar layout allows easy scanning for users with cognitive difficulties.
+    The chart was saved as a high-resolution PNG to ensure clarity when shared digitally.
     
     > Who are the individuals and communities who might be impacted by your visualization?  
+
+    Toronto residents can use this information to advocate for park access in underserved neighborhoods.
+    City planners and policymakers might prioritize funding and resources to areas lacking park projects.
+    Local community groups and activists may leverage this data for engagement or grant proposals.
+    Researchers and journalists focused on urban development and public health.
     
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
+     Focused on the project_name, address, and description fields to identify new park projects and their locations.
+     Excluded columns unrelated to geography or project type, such as IDs or detailed descriptions not useful for this aggregation.
+    Simplified the address to an approximate area name to group projects by location.
+     Filtered specifically for “new park” keywords to isolate relevant projects.
+
     
     > What ‘underwater labour’ contributed to your final data visualization product?
+
+    Data cleaning: Handling missing or inconsistent address data and filtering relevant projects.
+    Text parsing: Developing logic to extract meaningful area names from messy address strings.
+    Research: Understanding the dataset schema and verifying the meaning of columns.
+    Design iteration: Testing different chart types and color palettes to improve clarity and accessibility.
+    Code debugging: Ensuring the script ran without errors and the plot displayed correctly.
+    Documentation: Writing comments and explanations to clarify each step for reproducibility.
+
+     Note: Please follow the analysis Visualization file 'NewPark_Projects.png'.
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
